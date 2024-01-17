@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.aboutt{
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.wrapperr{
+    padding-top: 7%;
+}
+.wrapper__contentt{
+    display: flex;
+    max-width: 1200px;
+    margin-left: 5%;
+}

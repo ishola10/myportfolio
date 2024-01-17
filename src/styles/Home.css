@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200&family=League+Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --font-almarena: "__almarena_274336", "__almarena_Fallback_274336";
+}
+.home {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* .container {
+  /* padding: 5rem 5rem;
+  margin-top: 8rem; 
+} */
+.home__content {
+  padding: 20% 0 4% 5%;
+  background: url(../assets/images/pure-css-rain.gif) no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+.home__content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: gray;
+}
+.home__content h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Almendra", cursive;
+}
+.home__content h2 span {
+  font-family: "Almendra", cursive;
+}
+.home__content p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+  width: 85%;
+  /* font-family: 'Almendra', cursive; */
+  font-family: system-ui, sans-serif;
+}
+.home__content p strong {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Almendra", cursive;
+  padding: 0.2rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.9s ease;
+  font-style: italic;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+.home__content p strong:hover {
+  background-color: white;
+  color: black;
+}
+.home__content__btns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.home__content a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Almendra", cursive;
+  padding: 0.2rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.9s ease;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+.home__content a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* About */
+.about {
+  background: black;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.about__content {
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+.about__content h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Almendra", cursive;
+  color: white;
+}
+.about__content p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: white;
+  width: 85%;
+  /* font-family: "Almendra", cursive; */
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+
+/* Skills */
+.skills__content {
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+.skills__content h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Almendra", cursive;
+  color: white;
+}
+/* .skills__grid {
+ 
+} */
+.skills__grid__item {
+  background: black;
+  padding: 1.2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills__grid__item h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: "Almendra", cursive;
+}
+.skills__grid__item ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.skills__grid__item ul li {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  position: relative;
+}
+/* .skills__grid__item ul li:hover {
+  background-color: white;
+  color: black;
+} */
+.skills__grid__item ul li:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.skills__grid__item ul li:active {
+  color: #000;
+}
+
+.skills__grid__item ul li:active:after {
+  background: transparent;
+}
+
+.skills__grid__item ul li:hover:before {
+  opacity: 1;
+}
+
+.skills__grid__item ul li:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Education */
+.education {
+  background: black;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.education__content {
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+.education__content h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Almendra", cursive;
+  color: white;
+}
+.education__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.education__grid__item {
+  background: black;
+  padding: 1.2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  position: relative;
+}
+.education__grid__item:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.education__grid__item:active {
+  color: #000;
+}
+
+.education__grid__item:after {
+  background: transparent;
+}
+
+.education__grid__item:hover:before {
+  opacity: 1;
+}
+
+.education__grid__item:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.education__grid__item h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: "Almendra", cursive;
+}
+.education__grid__item p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+
+/* Projects */
+.projects {
+  background: black;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.projects__content {
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+.projects__content h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Almendra", cursive;
+  color: white;
+}
+.projects__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.projects__grid__item {
+  background: black;
+  width: 35%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  position: relative;
+}
+.projects__grid__item__image {
+  width: 100%;
+  height: 30vh;
+  border-radius: 5px;
+}
+.projects__grid__item h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: "Almendra", cursive;
+}
+.projects__grid__item h3 a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: "Almendra", cursive;
+}
+.projects__grid__item p {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  width: 85%;
+  color: white;
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+.projects__grid__item__btns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.projects__grid__item__btns a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Almendra", cursive;
+  padding: 0.2rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.9s ease;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+.projects__grid__item__btns a:hover {
+  background-color: white;
+  color: black;
+}
+.projects__grid :nth-child(3) {
+  left: 60%;
+}
+.projects__grid :nth-child(1) {
+  left: 5%;
+}
+.projects__grid :nth-child(5) {
+  left: 5%;
+}
+#lineh1 {
+  border-bottom: 5px dotted gray;
+  width: 46%;
+  transform: rotate(25deg);
+  transform-origin: top left;
+  margin-left: 15%;
+}
+#lineh2 {
+  border-bottom: 5px dotted gray;
+  width: 27%;
+  transform: rotate(140deg);
+  transform-origin: top left;
+  margin-left: 65%;
+}
+.projects__btn {
+  margin-top: 2rem;
+}
+.projects__btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Almendra", cursive;
+  padding: 0.2rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.9s ease;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+.projects__btn a:hover {
+  background-color: white;
+  color: black;
+}
