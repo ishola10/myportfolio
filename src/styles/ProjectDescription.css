@@ -1,0 +1,61 @@
+.project-description {
+  background-color: black;
+  height: 100%;
+}
+
+.description {
+  padding: 10% 0 5% 10%;
+  color: white;
+  display: grid;
+  gap: 1rem;
+}
+
+.description h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  width: 100%;
+  font-family: "Almendra", cursive;
+}
+
+.description p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Almendra", cursive;
+}
+
+.btn {
+  color: gray;
+}
+
+.btnn {
+  text-decoration: none;
+  width: 180px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Almendra", cursive;
+  padding: 0.2rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.9s ease;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.btnn:hover {
+  background-color: white;
+  color: black;
+}
+
+.description img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}

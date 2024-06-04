@@ -1,23 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body::-webkit-scrollbar {
-  width: 0.5em;
-  background: black;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: gray;
-  outline: 1px solid slategrey;
-  border-radius: 20px;
-}
 .navbar {
   width: 100%;
   display: flex;
@@ -60,9 +40,23 @@ body::-webkit-scrollbar-thumb {
 .nav_content a:hover {
   color: white;
 }
-.nav_content a:focus {
+.nav_content a.active {
   color: white;
 }
 .nav_content a:active {
+  color: white;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social a i {
+  font-size: 2rem;
+  color: gray;
+}
+
+.social a i:hover {
   color: white;
 }

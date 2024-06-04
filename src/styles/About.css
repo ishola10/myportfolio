@@ -1,21 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.aboutt{
-    width: 100%;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.aboutt {
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-.wrapperr{
-    padding-top: 7%;
+.wrapperr {
+  padding-top: 7%;
 }
-.wrapper__contentt{
+.wrapper__contentt {
+  display: flex;
+  max-width: 1200px;
+  margin-left: 5%;
+}
+.about__big-text {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  font-size: 6rem;
+  font-weight: 700;
+  width: 150px;
+  display: flex;
+}
+.about__big-text div {
+  margin-bottom: 0.5rem;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+
+.about {
+  background: black;
+  width: 100%;
+  margin: 10% 0;
+}
+
+.about__contentt {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about__contentt img {
+  width: 90%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+
+.about__contentt p {
+  font-size: 1.3rem;
+  color: rgb(203, 202, 202);
+  font-weight: 100;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+
+.linee {
+  width: 1px;
+  height: 250vh;
+  background-color: white;
+  margin: 2rem 2rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-me h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(151, 150, 150);
+  font-family: "Almendra", cursive;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: gray;
+  font-family: "Commissioner", sans-serif;
+}
+
+.about-me .socials nav{
     display: flex;
-    max-width: 1200px;
-    margin-left: 5%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-me .socials nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.about-me .socials nav a:hover{
+    text-decoration: underline;
+}
+
+.about-me .socials span h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    font-family: "Almendra", cursive;
+}
+
+.about-me .socials span nav a i{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.about-me .socials span nav a i:hover{
+    text-decoration: none;
+    color: gray;
 }

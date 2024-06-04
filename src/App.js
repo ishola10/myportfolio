@@ -1,49 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home.js";
-import Projects from "./components/Project.js";
-import Contact from "./components/Contact.js";
-import ErrorPage from "./components/ErrorPage.js";
-import About from "./components/About.js";
-import Logo from "./assets/images/me.jpg";
+import Home from "./views/Home.js";
+import Projects from "./views/Project.js";
+import ProjectDescription from "./components/ProjectDescription.js";
+import ErrorPage from "./views/ErrorPage.js";
+import About from "./views/About.js";
+import Blog from "./views/Blog.js";
+import NavBar from "./components/NavBar.js";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <header className="header">
-          <div className="navbar">
-            <div className="logo">
-              <Link className="link" to="/">
-                <img src={Logo} alt="logo" />
-                <h2>BM</h2>
-              </Link>
-            </div>
-            <div>
-              <nav className="nav_content">
-                {/* <Link className="link" to="/">
-                  Home
-                </Link> */}
-                <Link className="link" to="/about">
-                  About
-                </Link>
-                <Link className="link" to="/projects">
-                  Projects
-                </Link>
-                <Link className="link" to="/contact">
-                  Contact
-                </Link>
-              </nav>
-            </div>
-          </div>
-        </header>
+        <NavBar />
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects/:id" element={<ProjectDescription />} />
           <Route path="*" element={<ErrorPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.writing {
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.writing-container {
+  padding-top: 10%;
+}
+.writing-container-content {
+  display: flex;
+  max-width: 1200px;
+  margin-left: 5%;
+  /* padding-top: 10%; */
+}
+
+.writing__big-text {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  font-size: 6rem;
+  font-weight: 700;
+  width: 150px;
+  display: flex;
+}
+.writing__big-text div {
+  margin-bottom: 0.5rem;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+
+.line {
+  width: 1px;
+  height: 230vh;
+  background-color: white;
+  margin: 2rem 2rem;
+}
+
+.blog__gridd{
+  display: grid;
+  gap: 4rem;
+  max-width: 600px;
+  text-align: left;
+  align-items: start;
+}
+
+.blog__grid__itemm {
+  background: black;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.blog__grid__itemm h3 a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  color: white;
+  font-family: "Almendra", cursive;
+}
+
+.blog__grid__itemm .date{
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  color: rgb(201, 199, 199);
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+
+.blog__grid__itemm .date strong{
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.blog__grid__itemm p {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: gray;
+  font-family: "Commissioner", sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+
+.read-more-btn{
+  margin-left: -310%;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Almendra", cursive;
+  margin-top: 1rem;
+}
