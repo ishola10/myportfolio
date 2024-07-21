@@ -213,7 +213,7 @@ const Home = () => {
                           zIndex: 1,
                           left: "100%",
                           top: "20%",
-                          animation: "moveLines 3s linear infinite",
+                          // animation: "moveLines 3s linear infinite",
                         }}
                       >
                         <path

@@ -114,7 +114,7 @@ function About() {
                 <p>
                   I'm currently pursuing a Bachelor's degree in Physics at Ekiti
                   state University. I also have a Diploma in Software
-                  Development from Altschool Africal and also a certificate in
+                  Development from Altschool Africa & Alx Africa and also a certificate in
                   frontend engineering from Future Academy Africa.
                 </p>
               </section>
@@ -125,7 +125,7 @@ function About() {
                   I have experience working with HTML, CSS, JavaScript, Vuejs,
                   Reactjs, Typescript, and other technologies.I also have
                   experience in styling librabries like Tailwind css, Bootstrap.
-                  I also have experience with ui/ux design tools like Figma,
+                  Experienced with ui/ux design tools like Figma,
                   Adobe XD, Adobe Photoshop. Also version control tools like Git
                   and Github. I am also a Physics enthusiast and enjoy writing
                   about the relationship between physics and frontend
@@ -154,7 +154,7 @@ function About() {
                 <h1>Interests 🎉</h1>
                 <p>
                   I love to read, write, code, watch anime, watch and play
-                  football. I also love to teach and mentor entry level
+                  football. Also love to teach and mentor entry level
                   developers.
                 </p>
               </section>

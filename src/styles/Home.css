@@ -165,14 +165,15 @@
   padding: 0.5rem 1rem;
   width: 15%;
   margin: 0 auto;
-  background: linear-gradient(to right, #ff9a9e, green, red, blue);
+  cursor: pointer;
+  /* background: linear-gradient(to right, #ff9a9e, green, red, blue);
   box-shadow: 10px 10px 20px rgb(248, 89, 89),
   inset 0 0 10px rgb(111, 111, 255);
   background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 10s ease infinite; */
 }
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -182,7 +183,7 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 .skills__container {
   position: relative;
@@ -200,6 +201,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .skill i {
