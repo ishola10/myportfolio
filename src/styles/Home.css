@@ -597,7 +597,7 @@
   }
 
   .home__content h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .home__content p {
@@ -605,14 +605,14 @@
   }
 
   .home__content p strong {
-    font-size: 1rem;
+    font-size: 1.2rem;
     animation: none;
     background-image: none;
     border: none;
   }
 
   .home__content__btns a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .main-skill h2 {
@@ -629,7 +629,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    padding-right: 5%;
   }
 
   .skill {
