@@ -335,7 +335,7 @@ const Home = () => {
 
               <div
                 data-aos="fade-up"
-                data-aos-delay="800"
+                data-aos-delay="600"
                 className="blog__grid__item"
               >
                 <h3>
@@ -374,7 +374,7 @@ const Home = () => {
 
               <div
                 data-aos="fade-up"
-                data-aos-delay="800"
+                data-aos-delay="600"
                 className="blog__grid__item"
               >
                 <h3>
@@ -442,7 +442,7 @@ const Home = () => {
                 Nigeria. I have a passion for creating accessible and
                 user-friendly web apps and designs. I have experience working
                 with Vuejs, React, Typescript, and other technologies. I am also
-                a Physics enthusiast and enjoy writing about the relationship
+                a Physics enthusiast and enjoy learning about the relationship
                 between physics and frontend development.
               </p>
               <div className="about_content_btn">

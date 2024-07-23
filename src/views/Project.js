@@ -90,6 +90,7 @@ function Project() {
             <hr className="lines" />
           </div>
           <div className="projects__wrapper">
+            <h1>Some of my projects</h1>
             <div className="projects__grids">
            
               {projects.map((project, index) => (
@@ -128,7 +129,13 @@ function Project() {
                 </div>
               ))}
             </div>
+
+            <div>
+              <h1>Still more to come....</h1>
+            </div>
           </div>
+
+
         </div>
         <Footer />
       </div>

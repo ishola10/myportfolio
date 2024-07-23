@@ -38,7 +38,7 @@ const Blog = () => {
 
           <div className="writing__wrapper">
             <div data-aos="fade-up" data-aos-delay="300" className="blog">
-              <div className="blog__content">
+              <div className="blog__contentt">
                 <h2>Some of my Writings</h2>
                 <div className="blog__gridd">
                   <div data-aos="fade-up" data-aos-delay="600" className="blog__grid__itemm">

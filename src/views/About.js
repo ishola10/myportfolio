@@ -58,7 +58,7 @@ function About() {
                     user-friendly web apps and designs. I have experience
                     working with Vuejs, React, Typescript, and other
                     technologies. I am also a Physics enthusiast and enjoy
-                    writing about the relationship between physics and frontend
+                    learning about the relationship between physics and frontend
                     development.
                   </p>
                 </div>
@@ -127,7 +127,7 @@ function About() {
                   experience in styling librabries like Tailwind css, Bootstrap.
                   Experienced with ui/ux design tools like Figma,
                   Adobe XD, Adobe Photoshop. Also version control tools like Git
-                  and Github. I am also a Physics enthusiast and enjoy writing
+                  and Github. I am also a Physics enthusiast and enjoy learning
                   about the relationship between physics and frontend
                   development.
                 </p>
@@ -166,7 +166,7 @@ function About() {
               >
                 <h1>Get in touch 📞</h1>
                 <p>
-                  <nav>
+                  <nav className="h">
                     <p>
                       Email:{" "}
                       <strong>
