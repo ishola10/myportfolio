@@ -150,26 +150,34 @@
 }
 
 .skills {
-  text-align: center;
-  position: relative;
-  margin: 20% 0 25% 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 10px;
+
 }
 
-.skills h2 {
-  font-size: 3rem;
-  font-weight: bolder;
-  font-family: "Almendra", cursive;
-  color: white;
-  border: 1px solid white;
-  padding: 0.5rem 1rem;
-  width: 15%;
-  margin: 0 auto;
+.skill{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   cursor: pointer;
-  /* background: linear-gradient(to right, #ff9a9e, green, red, blue);
-  box-shadow: 10px 10px 20px rgb(248, 89, 89),
-  inset 0 0 10px rgb(111, 111, 255);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite; */
+}
+
+.skill i {
+  font-size: 3rem;
+  color: transparent;
+  background: linear-gradient(45deg, #ff6347, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
 }
 
 /* @keyframes gradientAnimation {
@@ -184,151 +192,6 @@
   }
 } */
 
-.skills__container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.skill {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.skill i {
-  font-size: 3rem;
-  color: transparent;
-  background: linear-gradient(45deg, #ff6347, #00ffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.5px white;
-}
-
-.skill span {
-  margin-top: 5px;
-}
-
-/* Positioning each skill */
-.skill:nth-child(1) {
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -95%);
-}
-
-.skill:nth-child(2) {
-  top: 50%;
-  left: calc(50% + 300px);
-  transform: translate(-50%, -95%);
-}
-
-.skill:nth-child(3) {
-  top: calc(50% - 250px);
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.skill:nth-child(4) {
-  top: calc(50% + 200px);
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 108px;
-}
-
-.skill:nth-child(5) {
-  top: calc(50% + 100px);
-  left: calc(50% + 200px);
-  transform: translate(-50%, -50%);
-}
-
-.skill:nth-child(6) {
-  top: calc(50% + 100px);
-  left: calc(50% - 170px);
-  transform: translate(-110%, -50%);
-}
-
-.skill:nth-child(7) {
-  top: calc(50% - 180px);
-  left: calc(50% + 200px);
-  transform: translate(-50%, -50%);
-}
-
-.skill:nth-child(8) {
-  top: calc(50% - 180px);
-  left: calc(50% - 200px);
-  transform: translate(-50%, -50%);
-}
-
-.skill::after {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 1px;
-  background-color: white;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-}
-
-.skill:nth-child(1)::after {
-  top: 20%;
-  left: 170%;
-  width: 200%;
-}
-
-.skill:nth-child(2)::after {
-  top: 20%;
-  left: -60%;
-  width: 180%;
-}
-.skill:nth-child(3)::after {
-  top: 70%;
-  left: 50%;
-  width: 1px;
-  height: 110%;
-}
-.skill:nth-child(4)::after {
-  top: -160%;
-  left: 50%;
-  width: 1px;
-  height: 150%;
-}
-
-.skill:nth-child(5)::after {
-  top: -46%;
-  left: -70%;
-  transform: rotate(38deg);
-  width: 125%;
-}
-
-.skill:nth-child(6)::after {
-  top: -30%;
-  left: 60%;
-  transform: rotate(-45deg);
-  width: 150%;
-}
-
-.skill:nth-child(7)::after {
-  top: 75%;
-  left: -73%;
-  transform: rotate(-45deg);
-  width: 110%;
-}
-
-.skill:nth-child(8)::after {
-  top: 70%;
-  left: 54%;
-  transform: rotate(45deg);
-  width: 118%;
-}
 
 /* Projects */
 .projects {
@@ -618,27 +481,9 @@
   .main-skill h2 {
     font-size: 2rem;
   }
-
-  .skills h2 {
-    display: none;
-  }
-
-  .skills__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding-right: 5%;
-  }
-
-  .skill {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    transform: none !important;
+  
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .skill i {
@@ -649,22 +494,6 @@
     font-size: 1.5rem;
   }
 
-  .skill:nth-child(1),
-  .skill:nth-child(2),
-  .skill:nth-child(3),
-  .skill:nth-child(4),
-  .skill:nth-child(5),
-  .skill:nth-child(6),
-  .skill:nth-child(7),
-  .skill:nth-child(8) {
-    top: auto;
-    left: auto;
-    transform: none;
-  }
-
-  .skill::after {
-    display: none;
-  }
 
   .projects__content {
     padding: 0 5%;

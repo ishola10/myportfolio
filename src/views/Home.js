@@ -63,10 +63,8 @@ const Home = () => {
       description:
         "An advanced Url shortening app that helps you shorten your long url to a shorter one.",
       image: ScissorsImage,
-      demoLink:
-        "https://linkswift.netlify.app",
-      githubLink:
-        "https://github.com/ishola10/Link-Swift.io",
+      demoLink: "https://linkswift.netlify.app",
+      githubLink: "https://github.com/ishola10/Link-Swift.io",
       technologies: "Vuejs, Typescript, Firebase, and Axios",
     },
   ];
@@ -109,40 +107,57 @@ const Home = () => {
         <div className="main-skill">
           <h2>Skills</h2>
           <div className="skills">
-            <h2>Skills</h2>
-            <div className="skills__container">
-              <div className="skill">
-                <i className="fab fa-html5"></i>
-                <span>HTML</span>
-              </div>
-              <div className="skill">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span>CSS</span>
-              </div>
-              <div className="skill">
-                <i className="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill">
-                <i class="fab fa-react"></i>
-                <span>React</span>
-              </div>
-              <div class="skill">
-                <i class="fab fa-vuejs"></i>
-                <span>Vue</span>
-              </div>
-              <div class="skill">
-                <i class="fab fa-sass"></i>
-                <span>Sass</span>
-              </div>
-              <div class="skill">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span>TailwindCss</span>
-              </div>
-              <div class="skill">
-                <i class="fab fa-js"></i>
-                <span>Typescript</span>
-              </div>
+            <div className="skill">
+              <i className="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div className="skill">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div className="skill">
+              <i className="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-react"></i>
+              <span>React-js</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-vuejs"></i>
+              <span>Vue-js</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-sass"></i>
+              <span>Sass</span>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>TailwindCss</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-js"></i>
+              <span>Typescript</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-js"></i>
+              <span>Next-js</span>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-wordpress"></i>
+              <span>WordPress</span>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-figma"></i>
+              <span>Figma</span>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-git"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-github"></i>
+              <span>Github</span>
             </div>
           </div>
         </div>
