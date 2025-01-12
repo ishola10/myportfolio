@@ -6,6 +6,7 @@ import Strengthy from "../assets/images/strenghty.png";
 import Vaccine from "../assets/images/Desktop - 1.png";
 import Scissors from "../assets/images/linkswift.png";
 import Predictify from "../assets/images/predictify.png";
+import ArogStudio from "../assets/images/arogstudio.png";
 
 function Project() {
   const projects = [
@@ -42,7 +43,14 @@ function Project() {
       image: Predictify,
       link: "https://vacineapp.netlify.app/",
     },
-    
+    {
+      id: "arogstudio",
+      name: "ArogStudio",
+      description:
+        "AROGS Studio is a collaborative architectural design firm dedicated to pushing the boundaries of innovation and creativity...",
+      image: ArogStudio,
+      link: "https://arogstudio.com.ng/",
+    },
   ];
 
   return (

@@ -6,6 +6,7 @@ import Strengthy from "../assets/images/strenghty.png";
 import Vaccine from "../assets/images/Desktop - 1.png";
 import Scissors from "../assets/images/linkswift.png";
 import Predictify from "../assets/images/predictify.png";
+import ArogStudio from "../assets/images/arogstudio.png";
 
 function ProjectDescription() {
   const { id } = useParams();
@@ -18,6 +19,8 @@ function ProjectDescription() {
       ? 2
       : id === "predictify"
       ? 3
+      : id === "arogstudio"
+      ? 4
       : -1;
   const projectName =
     id === "strengthy"
@@ -28,6 +31,8 @@ function ProjectDescription() {
       ? "VaccineApp"
       : id === "predictify"
       ? "Predictify"
+      : id === "arogstudio"
+      ? "Arog Studio"
       : "";
   const { description, features, date } = descriptions[projectIndex];
   let projectImage, projectLink;
@@ -49,6 +54,10 @@ function ProjectDescription() {
     case "predictify":
       projectImage = Predictify;
       projectLink = "https://vacineapp.netlify.app/";
+      break;
+    case "arogstudio":
+      projectImage = ArogStudio;
+      projectLink = "https://arogstudio.com.ng/";
       break;
     default:
       projectImage = "";

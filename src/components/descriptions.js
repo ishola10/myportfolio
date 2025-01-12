@@ -47,6 +47,17 @@ const descriptions = [
       "Manage your profile information, including your account settings and preferences",
     ],
   },
+  {
+    description:
+      "AROGS Studio is a collaborative architectural design firm dedicated to pushing the boundaries of innovation and creativity.",
+    date: "Dec, 2024 --- Vuejs, Axios, and Css",
+    features: [
+      "Architectural design services",
+      "Interior design services",
+      "Landscape design services",
+      "3D modeling and visualization",
+    ],
+  }
 ];
 
 export default descriptions;
