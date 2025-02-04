@@ -8,7 +8,7 @@ import StrengthyImage from "../assets/images/strenghty.png";
 import VaccineImage from "../assets/images/Desktop - 1.png";
 import ScissorsImage from "../assets/images/linkswift.png";
 import ProfileImage from "../assets/images/mee.png";
-import CV from "../assets/files/BADMUS MUHAMMED CVv.pdf";
+import CV from "../assets/files/Muhammed Badmus.pdf";
 import "../styles/Home.css";
 
 const Home = () => {
