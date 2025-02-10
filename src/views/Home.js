@@ -69,6 +69,23 @@ const Home = () => {
     },
   ];
 
+  // const experience = [
+  //   {
+  //     title: "Frontend Developer",
+  //     company: "Build Together NG",
+  //     date: "2024 - Present",
+  //     description:
+  //       "I am currently working as a Frontend Developer at Build Together where I work on various projects using Vue, React, and other technologies.",
+  //   },
+  //   {
+  //     title: "Frontend Developer Intern",
+  //     company: "Adebayo Adeleke LLC ~ Texas, USA",
+  //     date: "2024 - Present",
+  //     description:
+  //       "I'm currently interning as a Frontend Developer at Adebayo Adeleke LLC where I worked on various projects using React, Next, and other technologies.",
+  //   },
+  // ];
+
   return (
     <div className="home">
       <motion.div
@@ -161,6 +178,24 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        {/* <motion.div
+          className="experiences"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.div
+            className="experiences__content"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            
+          </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="projects"
